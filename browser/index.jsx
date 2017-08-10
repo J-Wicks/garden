@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, browserHistory, IndexRedirect } from 'react-router';
+import { Route, IndexRedirect } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 import axios from 'axios';
 import '../public/index.scss';
 
 import AppContainer from './containers/AppContainer.jsx';
+// import DumbComponent from './components/DumbComponent.jsx';
 
-ReactDOM.render(<AppContainer />, document.getElementById('app'));
+ReactDOM.render(
+  <Router>
+    <Route path="/" component={AppContainer} />
+  </Router>, document.getElementById('app'));
