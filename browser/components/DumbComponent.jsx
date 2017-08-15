@@ -4,7 +4,7 @@ import React from 'react';
 export default function DumbComponent () {
   return (
     <div>
-      <button className="btn btn-success"> is bootstrap working </button>
+      <img src="/images/garden.jpg" height="100%" width="100%" />
     </div>
   );
 }
