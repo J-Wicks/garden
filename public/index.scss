@@ -2,9 +2,13 @@
   margin: 0
 }
 
+.plantstats {
+  border-style: dotted;
+}
 .bar {
   height: 75vh;
-  padding: 0
+  padding: 0;
+  background-color: #66ff99;
 }
 #right-bar {
   background-color:#285943;

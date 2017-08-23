@@ -6,7 +6,7 @@ export default function PlantCircle (props) {
   const section = props.section;
   return (
     <li>
-      <section id={section}>
+      <section id={section || 'selectedPlant'}>
         <img className="plantlink" alt={plant} src={`/images/${plant}.jpg`} />
       </section>
     </li>
