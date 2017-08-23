@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 // import axios from 'axios';
-import { Route} from 'react-router';
+import { Route, Switch} from 'react-router-dom';
 // import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import PlantSideBar from '../components/PlantSidebar.jsx';
@@ -21,7 +21,7 @@ const AppContainer = () => (
           <PlantSideBar />
         </div>
         <div className="bar col-lg-8">
-          <Route path="/" component={DumbComponent} />
+          <Route path="/:plant" component={DumbComponent} />
         </div>
         <div id="right-bar" className="bar col-lg-2">
           <CritterSideBar />
